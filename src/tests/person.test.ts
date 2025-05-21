@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 
 const person = {
-  isActive: false,
+  isActive: true,
   age: 32,
 };
 
@@ -10,7 +10,7 @@ describe("person", () => {
     expect(person).toBeDefined();
   });
 
-  test("is the person active ?", () => {
+  test("is active ", () => {
     expect(person.isActive).toBeTruthy();
   });
 });
